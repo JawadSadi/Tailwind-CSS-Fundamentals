@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Sizing</title>
+  </head>
+  <body class="p-10">
+    <h1>1.Width all around</h1>
+    <div class="bg-teal-100 p-10">
+      <div class="m-1 w-0">0</div>
+      <div class="bg-red-400 m-1 w-1">1</div>
+      <div class="bg-red-400 m-1 w-1.5">1.5</div>
+      <div class="bg-red-400 m-1 w-4">4</div>
+      <div class="bg-red-400 m-1 w-8">8</div>
+      <div class="bg-red-400 m-1 w-12">12</div>
+      <div class="bg-red-400 m-1 w-16">16</div>
+      <div class="bg-red-400 m-1 w-20">20</div>
+      <div class="bg-red-400 m-1 w-24">24</div>
+      <div class="bg-red-400 m-1 w-28">28</div>
+      <div class="bg-red-400 m-1 w-32">32</div>
+      <div class="bg-red-400 m-1 w-40">40</div>
+      <div class="bg-red-400 m-1 w-44">44</div>
+      <div class="bg-red-400 m-1 w-48">48</div>
+      <div class="bg-red-400 m-1 w-52">52</div>
+      <div class="bg-red-400 m-1 w-56">56</div>
+      <div class="bg-red-400 m-1 w-60">60</div>
+      <div class="bg-red-400 m-1 w-64">64</div>
+    </div>
+
+    <h1 class="mt-20">Percentages</h1>
+    <div class="bg-yellow-200 p-10">
+      <div class="bg-green-500 p-2 w-1/2">1/2</div>
+      <div class="bg-green-500 p-2 w-2/5">2/5</div>
+      <div class="bg-green-500 p-2 w-3/10">3/10</div>
+      <div class="bg-green-500 p-2 w-2/12">2/12</div>
+    </div>
+
+    <!-- -lg ,-xl ,-2xl ,-4xl ,-full ,-sm-->
+    <h1 class="mt-20">2.Max width</h1>
+    <div class="bg-indigo-600 p-10 text-white text-lg max-w-lg">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore veniam
+      placeat, aliquid atque architecto doloribus esse consequuntur asperiores,
+      dignissimos qui dolorum et ex sed nostrum delectus totam, neque at vitae
+      officiis vel aut reprehenderit. Quam voluptate unde eaque nisi, sint
+      facilis itaque modi animi esse laboriosam impedit incidunt, odit,
+      reiciendis fugiat nobis laudantium illo rem deleniti pariatur quo eius
+      delectus! Dolorem, veniam totam necessitatibus nihil, amet architecto
+      perferendis modi illo, illum sapiente est sunt asperiores aperiam. Ipsum
+      minima aperiam eos id non asperiores, quos corrupti possimus debitis
+      aliquid fugiat molestias odit est architecto expedita sed amet optio
+      commodi tempora illo.
+    </div>
+
+    <h1 class="mt-20">3.VW & Width 100%</h1>
+    <div class="bg-green-600 p-10 text-white text-lg w-screen">(vw) screen</div>
+    <div class="bg-green-600 p-10 text-white text-lg w-full">
+      (width 100%) w-full
+    </div>
+    <div class="bg-green-800 p-10 text-white text-lg w-[500px]">
+      Arbitrary Width (500px)
+    </div>
+
+    <h1 class="mt-20">1.Width all around</h1>
+    <div class="bg-amber-600 p-10 flex">
+      <div class="m-1 w-0">0</div>
+      <div class="bg-blue-400 m-1 h-1">1</div>
+      <div class="bg-blue-400 m-1 h-1.5">1.5</div>
+      <div class="bg-blue-400 m-1 h-4">4</div>
+      <div class="bg-blue-400 m-1 h-8">8</div>
+      <div class="bg-blue-400 m-1 h-12">12</div>
+      <div class="bg-blue-400 m-1 h-16">16</div>
+      <div class="bg-blue-400 m-1 h-20">20</div>
+      <div class="bg-blue-400 m-1 h-24">24</div>
+      <div class="bg-blue-400 m-1 h-28">28</div>
+      <div class="bg-blue-400 m-1 h-32">32</div>
+      <div class="bg-blue-400 m-1 h-40">40</div>
+      <div class="bg-blue-400 m-1 h-44">44</div>
+      <div class="bg-blue-400 m-1 h-48">48</div>
+      <div class="bg-blue-400 m-1 h-52">52</div>
+      <div class="bg-blue-400 m-1 h-56">56</div>
+      <div class="bg-blue-400 m-1 h-60">60</div>
+      <div class="bg-blue-400 m-1 h-64">64</div>
+    </div>
+
+    <h1 class="mt-20">Min Height Full</h1>
+    <div class="p-5 h-[400px] bg-red-500 mb-5">
+      <div class="min-h-full bg-teal-400">Take Full Height</div>
+    </div>
+
+    <h1 class="mt-20">Max Height Full</h1>
+    <div class="p-5 h-[400px] bg-black mb-5">
+      <div class="max-h-full bg-white">Take Full Height</div>
+    </div>
+
+    <h1 class="mt-20">Full Screen Height</h1>
+    <div class="p-5 h-screen bg-pink-400 mb-5">Height Screen</div>
+
+    <h1 class="mt-20">Width Auto</h1>
+    <div class="p-5 w-auto bg-green-400 mb-5">Width Auto</div>
+  </body>
+</html>
