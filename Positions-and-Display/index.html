@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Positions and Display</title>
+  </head>
+  <body class="p-10">
+    <h1>Positions</h1>
+    <div class="relative w-1/2 bg-green-300 h-40 mt-4">
+      <p>Relative</p>
+      <div class="py-6 px-14 bg-teal-400 absolute bottom-0 right-0">Click</div>
+    </div>
+    <div class="relative w-1/2 bg-green-300 h-40 mt-4">
+      <p>Relative</p>
+      <div class="py-6 px-14 bg-teal-400 absolute top-0 left-0">Click</div>
+    </div>
+    <div class="relative w-1/2 bg-green-300 h-40 mt-4">
+      <p>Relative</p>
+      <div class="py-6 px-14 bg-teal-400 absolute bottom-0 left-0">Click</div>
+    </div>
+    <div class="relative w-1/2 bg-green-300 h-40 mt-4">
+      <p>Relative</p>
+      <div class="py-6 px-14 bg-teal-400 absolute top-0 right-0">Click</div>
+    </div>
+
+    <h1 class="mt-12 mb-2">Display</h1>
+    <div class="bg-indigo-200 p-10 w-[500px] mb-10">
+      <span class="inline"
+        >1.This is inline Display and will wrap normally</span
+      >
+      <span class="inline-block bg-orange-200 w-[100px] h-[200px]"
+        >2.This is inline-block Display and will not extend beyond it's
+        parent</span
+      >
+      <span class="block"
+        >3.This is diplay block and will move to it's own line.</span
+      >
+      <span class="hidden"
+        >4.This is diplay hidden and will not display at all.</span
+      >
+    </div>
+  </body>
+</html>
